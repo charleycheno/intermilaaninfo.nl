@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.website {
+    width: 100vw;
+}
+
+/* header en navigatie balk */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  font-family: "Oswald";
+  background-color: #1e1e1e;
+}
+
+header a {
+    text-decoration: none;
+  }
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title span:first-child {
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.title span:last-child {
+    font-size: 25px;
+    color: yellow;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 25px;
+  font-size: 30px;
+  color: white;
+  transition: 300ms;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* section en banner voor cool effect */
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+section h1 {
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url(intermilaan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 50%;
+    height: 500px;
+    width: 100vw;
+}
+
+/* grens tussen stukjes */
+
+hr {
+    width: 100vw;
+}
+
+/* articles */
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    line-height: 30px;
+    margin: 50px 0;
+}
+
+article h2 {
+    margin-bottom: 30px;
+}
+
+/* bestuurders */
+
+.bestuurders {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    gap: 15px;
+}
+
+.bestuurders div {
+    background-color: #bbbbff;
+    border: rgb(100, 100, 190) 5px solid;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.bestuurders h3 {
+    font-size: 26px;
+}
+
+.bestuurders img {
+    margin: 10px 0;
+}
+
+/* contactformulier */
+
+form input {
+    width: 300px;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+form textarea {
+    resize: none;
+    width: 300px;
+    height: 250px;
+}
+
+/* footer */
+
+footer {
+    padding: 50px 0;
+    background-color: #1e1e1e;
+    width: 100vw;
+    text-align: center;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.snel-navigeren a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.snel-navigeren a:hover {
+    text-decoration: underline;
+}
